@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/form-demo/',
   resolve: {
     alias: [
       { find: 'src', replacement: fileURLToPath(new URL('./src', import.meta.url)) },
