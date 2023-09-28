@@ -1,0 +1,101 @@
+.wrapper {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  transition: all 0.15s ease-out;
+  top: calc(50% - 21px);
+  left: 17px;
+  overflow: hidden;
+  width: calc(100% - 32px);
+  white-space: nowrap;
+
+  &.isControlVisible {
+    top: 8px;
+  }
+}
+
+.Select {
+  :global(.select__control) {
+    transition: all .3s ease;
+  }
+
+  :global(.select__control),
+  :global(.select__control):hover {
+    height: 60px;
+    border: 1px solid var(--gray2);
+    border-radius: 6px;
+  }
+
+  :global(.select__control):hover {
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.02), 
+    0px 3px 5px rgba(0, 0, 0, 0.03), 
+    0px 3px 4px rgba(0, 0, 0, 0.01);
+  }
+
+  :global(.select__control--is-focused),
+  :global(.select__control--is-focused):hover {
+    border-color: var(--black);
+  }
+
+  &.withError {
+    :global(.select__control),
+    :global(.select__control):hover,
+    :global(.select__control--is-focused),
+    :global(.select__control--is-focused):hover {
+      border-color: var(--red);
+    }
+  }
+
+  :global(.select__indicator-separator) {
+    display: none;
+  }
+
+  :global(.select__dropdown-indicator) {
+    max-width: 40px;
+    overflow: hidden;
+    transition: opacity .3s;
+  }
+
+  :global(.select__control--is-disabled .select__dropdown-indicator) {
+    opacity: 0;
+  }
+
+  :global(.select__dropdown-indicator > svg) {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+  }
+
+  :global(.select__value-container) {
+    padding: 8px 16px;
+  }
+
+  :global(.select__placeholder) {
+    color: var(--gray4);
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  :global(.select__single-value) {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    margin: 0 !important;
+  }
+
+  &.disabled {
+    :global(.select__single-value) {
+      top: calc(50% + 8px);
+    }
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+}

@@ -1,0 +1,32 @@
+@import 'src/libs/bootstrap/_variables.scss';
+@import 'src/libs/bootstrap/_breakpoints.scss';
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-top: 40px;
+  gap: 20px;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 60px;
+  }
+
+  &::before {
+    content: '';
+    flex: 0 0 20%;  
+  }
+}
+.demoForm {
+  @include media-breakpoint-up(md) {
+    flex: 0 1 400px;
+  }
+}
+.result {
+  @include media-breakpoint-up(md) {
+    flex: 0 0 20%;
+  }
+}

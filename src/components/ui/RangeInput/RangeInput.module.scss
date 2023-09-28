@@ -1,0 +1,69 @@
+.rangeInput {
+  position: relative;
+}
+
+.range {
+  margin-top: -13px;
+  position: relative;
+  user-select: none;
+}
+
+.track {
+  height: 24px;
+  display: flex;
+  width: 100%;
+}
+
+.trackInner {
+  height: 3px;
+  width: 100%;
+  align-self: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--black);
+    margin-top: 1px;
+  }
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 19px;
+  background: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  user-select: none;
+}
+
+.thumbInner {
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.textInput {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.error {
+  position: absolute;
+  bottom: -11px;
+  right: 0;
+}
+
+.label {
+  margin-bottom: 9px;
+}

@@ -1,0 +1,72 @@
+.CheckBox {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+
+  .toggle {
+    background-color: var(--white);
+    border: 1px solid var(--gray4);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    position: relative;
+    top: 1px;
+    transition: all .3s ease;
+
+    &.checked {
+      background-color: var(--black);
+      border-color: var(--black);
+
+      .icon {
+        display: block;
+      }
+    }
+
+    .icon {
+      display: none;
+    }
+
+    &.disabled {
+      border-color: var(--gray4);
+
+      &.checked {
+        background-color: var(--gray4);
+        border-color: var(--gray4);
+      }
+
+      .icon {
+        opacity: .6;
+      }
+    }
+  }
+
+  &.lightBg .toggle {
+    border-color: var(--label);
+  }
+
+  &:hover {
+    .toggle,
+    .toggle.checked {
+      border-color: var(--black);
+    }
+
+    .toggle.disabled {
+      border-color: var(--gray4);
+    }
+  }
+
+  .label {
+    margin-left: 10px;
+  }
+
+  .error {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+  }
+}

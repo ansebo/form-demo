@@ -1,0 +1,10 @@
+.link-primary {
+  color: var(--black);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.link-primary:hover, .link-primary:focus {
+  color: var(--red);
+}

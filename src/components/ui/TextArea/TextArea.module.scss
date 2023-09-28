@@ -1,0 +1,60 @@
+.TextArea {
+  position: relative;
+}
+
+.control {
+  width: 100%;
+  outline: none;
+  border: 1px solid #F2F2F2;
+  border-radius: 6px;
+  min-height: 100px;
+  padding: 18px;
+  transition: all .3s ease;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  &:hover {
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.02), 
+    0px 3px 5px rgba(0, 0, 0, 0.03), 
+    0px 3px 4px rgba(0, 0, 0, 0.01);
+  }
+
+  &.withLabel {
+    padding-top: 26px;
+  }
+
+  &.focused {
+    border-color: var(--black);
+  }
+
+  &.withError,
+  &.focused.withError {
+    border-color: var(--red);
+  }
+
+  &.disabled {
+    background-color: var(--gray2);
+    box-shadow: none !important;
+  }
+}
+
+.label {
+  position: absolute;
+  transition: all 0.15s ease-out;
+  top: 16px;
+  left: 18px;
+  overflow: hidden;
+  width: calc(100% - 36px);
+  white-space: nowrap;
+
+  &.isControlVisible {
+    top: 8px;
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+}

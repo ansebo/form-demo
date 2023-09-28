@@ -1,0 +1,130 @@
+.Text {
+  &.size {
+    &_headLine1 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 34px;
+      line-height: 36px;
+    }
+    &_headLine4 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+    }
+    &_h2 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &_h3 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    &_h4 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.1em;
+      letter-spacing: -0.2px;
+    }
+
+    &_caption1 {
+      font-family: "Open Sans";
+      font-size: 11px;
+      line-height: 18px;
+      color: var(--label);
+    }
+
+    &_status {
+      font-family: "Open Sans";
+      font-size: 11px;
+      line-height: 12px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    &_body0 {
+      font-family: "Open Sans";
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.2px;
+    }
+
+    &_body1 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &_body2 {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &_bodyMini {
+      font-family: "Open Sans";
+      font-size: 12px;
+      letter-spacing: -0.2px;
+      line-height: 1.6;
+    }
+
+    &_subHeadline1 {
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &_tabMenu {
+      font-family: "Open Sans";
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+
+  &.color {
+    &_gray4 {
+      color: var(--gray4);
+    }
+
+    &_gray2 {
+      color: var(--gray2);
+    }
+
+    &_red {
+      color: var(--red);
+    }
+
+    &_white {
+      color: var(--white);
+    }
+
+    &_black {
+      color: var(--black);
+    }
+
+    &_label {
+      color: var(--label);
+    }
+  }
+
+  &.bold {
+    font-weight: 600;
+  }
+}
